@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.13.7 on win32)" generated="2026-10-08T15:09:43.321184" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\Harini Priya\Desktop\Robot_Login_Test\login_test.robot">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary" type="SETUP">
+<arg>30 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-10-08T15:09:43.665283" elapsed="0.000239"/>
+</kw>
+<test id="s1-t1" name="Valid Password Login" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:09:43.666357" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-08T15:09:43.666169" elapsed="2.166546"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-08T15:09:45.835078" elapsed="0.097745"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:09:47.945571" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:09:45.944417" elapsed="2.001589"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:09:47.948384" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T15:09:47.947019" elapsed="0.149355"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:09:50.097691" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:09:48.096791" elapsed="2.001161"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:09:50.099543" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-10-08T15:09:50.131223" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T15:09:50.098800" elapsed="0.071388"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:09:52.174384" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:09:50.173341" elapsed="2.001305"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:09:52.176075" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T15:09:52.175427" elapsed="0.077590"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:09:54.255299" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:09:52.253486" elapsed="2.002126"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Products</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-08T15:09:54.256739" elapsed="0.023055"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:09:56.281768" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:09:54.280653" elapsed="2.001476"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-10-08T15:09:56.283022" elapsed="2.428248"/>
+</kw>
+<status status="PASS" start="2026-10-08T15:09:43.665649" elapsed="15.046538"/>
+</test>
+<test id="s1-t2" name="Invalid Password Login" line="30">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:09:58.715565" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-08T15:09:58.715029" elapsed="1.438691"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-08T15:10:00.156200" elapsed="0.118093"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:10:02.277777" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:10:00.276529" elapsed="2.001572"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:10:02.279721" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T15:10:02.279021" elapsed="0.132831"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:10:04.413375" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:10:02.412424" elapsed="2.001206"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:10:04.415151" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-10-08T15:10:04.448227" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T15:10:04.414454" elapsed="0.070231"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:10:06.487676" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:10:04.485051" elapsed="2.002950"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-08T15:10:06.493439" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T15:10:06.492559" elapsed="0.162737"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:10:08.656755" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:10:06.655739" elapsed="2.001271"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Username and password do not match</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-08T15:10:08.658008" elapsed="0.015564"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T15:10:10.676568" level="INFO">Slept 2 seconds.</msg>
+<arg>2 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T15:10:08.674275" elapsed="2.002684"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-10-08T15:10:10.677875" elapsed="2.377142"/>
+</kw>
+<status status="PASS" start="2026-10-08T15:09:58.713580" elapsed="14.342247"/>
+</test>
+<status status="PASS" start="2026-10-08T15:09:43.323127" elapsed="29.734426"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="2" fail="0" skip="0">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
